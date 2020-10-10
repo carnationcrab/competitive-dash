@@ -1,12 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Pokemon from './components/pokemon';
+import {pokemons} from './components/data/pokemon'
+import PokemonList from './components/pokemonList';
 
 function App() {
   return (
     <div className="App">
-      <Pokemon />
+      <PokemonList pokemons={pokemons}/>
     </div>
   );
 }
