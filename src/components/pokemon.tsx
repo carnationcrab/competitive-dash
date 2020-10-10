@@ -1,19 +1,19 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-Pokemon.propTypes = {
-  name: PropTypes.string.isRequired,
-  typing: PropTypes.array.isRequired,
-};
+// Pokemon.propTypes = {
+//   // name: PropTypes.string.isRequired,
+//   // typing: PropTypes.array.isRequired,
+// };
 
 function Pokemon(props: any) {
   return (
     <div>
-      Name: {props.name}
+      This pokemon is {props.data.name}
       <ul>
         Types:
-        {props.typing.map((type: any) => (
-          <li>{type.info.name}</li>
+        {props.data.type.map((oneType: any) => (
+          <li>{oneType.info.name}</li>
         ))}
       </ul>
     </div>
