@@ -20,7 +20,7 @@ export const types = {
     strengths: [typeList.fire, typeList.ground, typeList.rock],
   },
   electric: {
-    name: typeList.electric,
+    info: typeList.electric,
     immunes: [typeList.ground],
     weaknesses: [typeList.electric, typeList.grass, typeList.dragon],
     strengths: [typeList.water, typeList.flying],
